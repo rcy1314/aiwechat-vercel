@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 	"slices"
-	"strconv"
 	"sync"
+	"strconv"
 
 	"github.com/pwh-pwh/aiwechat-vercel/db"
 )
@@ -129,8 +129,4 @@ func GetMaxTokens() int {
 		return 0
 	}
 	return maxTokens
-}
-
-func GetDefaultSystemPrompt() string {
-	return os.Getenv("defaultSystemPrompt")
 }
